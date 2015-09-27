@@ -34,7 +34,7 @@ public class InfoCell extends Cell implements IDeletable{
 
 	@Override
 	protected void actionOnOpen(Board board) {
-		board.getPlayer().setScore(2*this.number);
+		board.getPlayer().setScore(board.getPlayer().getScore()+(2*this.number));
 	}
 
 	@Override

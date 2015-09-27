@@ -148,6 +148,7 @@ public class Board {
 			for (Cell a : Acell) {
 				if (a instanceof IDeletable) {
 					((IDeletable) a).delete(this);
+					break;
 				}
 			}
 
